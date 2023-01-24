@@ -1,0 +1,49 @@
+html, * {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#side-img {
+    height: 100vh;
+    position: relative;
+}
+
+
+img#cafe {
+    height: 100vh;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 5px;
+    right: 0;;
+    text-align: center;
+    color: red;
+}
+
+div.logo {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+/*
+@font-face {
+    font-family: Bulgatti;
+    src: url(../fonts/Bulgatti-xgMV.ttf);
+}
+*/
+.logo .txt {
+    font-size: 40px;
+    font-family: Bulgatti;
+}
