@@ -1,49 +1,49 @@
-html, * {
-    box-sizing:border-box;
+html, body, * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: row-reverse;
+    display: grid;
+    grid-template-columns: 563px calc(100vw - 563px);
+    gap: 0;
 }
 
-#side-img {
-    height: 100vh;
-    position: relative;
-}
-
-
-img#cafe {
-    height: 100vh;
+div#side-img {
+    max-height: 100vh;
+    overflow: clip;
 }
 
 figcaption {
     position: absolute;
-    bottom: 5px;
-    right: 0;;
-    text-align: center;
-    color: red;
+    bottom: 20px;
+    z-index: 1;
 }
 
 div.logo {
-    position: absolute;
-    top: 40px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+    bottom: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 999;
+    gap: 15px;
 }
-/*
+
 @font-face {
     font-family: Bulgatti;
     src: url(../fonts/Bulgatti-xgMV.ttf);
 }
-*/
-.logo .txt {
-    font-size: 40px;
+
+.txt {
     font-family: Bulgatti;
+}
+
+form {
+    padding: 40px;
+}
+
+input, label {
+    display: block;
 }
