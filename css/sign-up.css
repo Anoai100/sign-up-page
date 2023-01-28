@@ -40,10 +40,86 @@ div.logo {
     font-family: Bulgatti;
 }
 
-form {
-    padding: 40px;
+form > p:first-of-type {
+    width: 80%;
+    margin: 20px auto 0;
 }
 
-input, label {
+fieldset {
+    margin: 20px 0 10px;
+    padding: 40px;
+    border-left: none;
+    border-right: none;
+}
+
+fieldset > p {
+    font-weight: 900;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+fieldset div *{
     display: block;
+}
+
+fieldset > div {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(2, auto);
+}
+
+
+fieldset label {
+    margin-top: 20px;
+}
+
+fieldset ~ input,
+button,
+form > p:last-of-type {
+    margin-top: 10px;
+}
+
+form > P:last-of-type {
+    width:auto;
+
+}
+
+button {
+    width: 100px;
+    height: 40px;
+    font-size: medium;
+    color: #0F0704;
+    background-color: green;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+@media (max-width: 1025px) {
+    :root {
+        --side-img: 337px;
+    }
+
+    div#side-img {
+        width: var(--side-img);
+        overflow: clip;
+    }
+    
+    image#cafe {
+        height: 100vh;
+    }
+
+    body {
+        grid-template-columns: var(--side-img) calc(100vw - var(--side-img));
+    }
 }

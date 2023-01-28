@@ -27,29 +27,52 @@
             By signing up, you'll join our family of thousands! Enjoy discounts and reliable customer services. We also link up our clients with related ideas and over the years we have pioneered great business partnerships.
         </p>
         <fieldset>
-            <legend>Provide the details below</legend>
+            <p>
+                Provide the details below
+            </p>
 
-            <label>First Name:</label>
-            <input type="text">
-            <label>Last Name:</label>
-            <input type="text">
-            <label>Choose a username:</label>
-            <input type="text" maxlength="12" minlength="6">
-            <label>Date of Birth:</label>
-            <input type="date">
-            <label>Email:</label>
-            <input type="email">
-            <label>Create password:</label>
-            <input type="password">
-            
-            <label for="">Retype password:</label>
-            <input type="password">
-            <input type="checkbox">
-            <label>Sign up for our weekly newsletter and updates</label>
-            <input type="radio">
-            <label>I have read and understood the <a href="#">terms and conditions</a></label>
+            <div>
+                <div>
+                    <label>First Name:</label>
+                    <input class="data" required type="text">
+                 </div>
+                <div>
+                    <label>Last Name:</label>
+                    <input class="data" required type="text">
+                 </div>
+                <div>
+                    <label>Choose a username:</label>
+                    <input class="data" required type="text" max length="12" minlength="6">
+                </div>
+                <div>
+                    <label>Date of Birth:</label>
+                    <input class="data" required type="date">
+                 </div>
+                <div>
+                    <label>Email:</label>
+                    <input class="data" required type="email">
+                 </div>
+                <div>
+                    <label>Mobile NO.</label>
+                    <input class="data" required type="number">
+                 </div>
+                <div>
+                    <label>Create password:</label>
+                    <input class="data" required type="password" >
+                </div>
+                <div>
+                    <label for="">Retype password:</label>
+                    <input class="data" required type="password" >
+                </div>
+            </div>
         </fieldset>
-        <button type="submit">Create Account</button>
+        <input type="checkbox">
+        <label>Sign up for our weekly newsletter and updates</label>
+        <br>
+        <input required type="checkbox" >
+        <label>I have read and understood the <a href="#">terms and conditions</a></label>
+        <br>
+        <button type="submit">Create</button>
         <p>Aleady have an account?
              <a href="#">Login</a>
         </p>
